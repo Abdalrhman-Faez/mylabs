@@ -1,0 +1,298 @@
++*In[1]:*+
+[source, ipython3]
+----
+from platform import python_version
+print(python_version)
+----
+
+
++*Out[1]:*+
+----
+<function python_version at 0x00000216DA6F78B0>
+----
+
+
++*In[2]:*+
+[source, ipython3]
+----
+from platform import python_version
+print(python_version())
+
+----
+
+
++*Out[2]:*+
+----
+3.8.5
+----
+
+== 1.2 running python
+
+
++*In[3]:*+
+[source, ipython3]
+----
+# filename.py
+''' 
+this is file header
+'''
+if __name__ == "__main__":
+    pass # 'pass' is a temporary placeholder.
+----
+
+== exercise 1
+
+
++*In[5]:*+
+[source, ipython3]
+----
+if __name__=="__main__":
+    print("hello, world!")
+----
+
+
++*Out[5]:*+
+----
+hello, world!
+----
+
+== 1.3 python basics
+
+== exercise 2
+
+
++*In[6]:*+
+[source, ipython3]
+----
+x,y = 1,4
+z = x + y
+print(z)
+----
+
+
++*Out[6]:*+
+----
+5
+----
+
+
++*In[7]:*+
+[source, ipython3]
+----
+x==y
+----
+
+
++*Out[7]:*+
+----False----
+
+== function
+
+
++*In[11]:*+
+[source, ipython3]
+----
+def math op(x, y):
+    temp = x + y
+    return temp
+z=math op (1,4)
+    
+----
+
+
++*Out[11]:*+
+----
+
+      File "<ipython-input-11-5bbc76a91513>", line 1
+        def math op(x, y):
+                 ^
+    SyntaxError: invalid syntax
+    
+
+----
+
+$$v = 3/4 r^3
+
+
++*In[12]:*+
+[source, ipython3]
+----
+$$v = 3/4 r^3$$
+----
+
+
++*Out[12]:*+
+----
+
+      File "<ipython-input-12-b4ba425418d3>", line 1
+        $$v = 3/4 r^3$$
+        ^
+    SyntaxError: invalid syntax
+    
+
+----
+
+[latexmath]
+++++
+\[v = 3/4 r^3\]
+++++
+
+[latexmath]
+++++
+\[v = 3/4\pi^3\]
+++++
+
+[latexmath]
+++++
+\[v = 3/4*\pi*r^3\]
+++++
+
+[latexmath]
+++++
+\[v = 3/4\pir^3\]
+++++
+
+[latexmath]
+++++
+\[v = 3/4\pi r^3\]
+++++
+
+[latexmath]
+++++
+\[v = 4/3\pi^3\]
+++++
+
+[latexmath]
+++++
+\[v = 4/3\pi r^3\]
+++++
+
+
++*In[16]:*+
+[source, ipython3]
+----
+prof =" broly"
+level = 10
+type(prof)
+type(level)
+----
+
+
++*Out[16]:*+
+----int----
+
+
++*In[17]:*+
+[source, ipython3]
+----
+course_name='is-372 data maining'
+print(course_name[0:5])
+----
+
+
++*Out[17]:*+
+----
+is-37
+----
+
+
++*In[18]:*+
+[source, ipython3]
+----
+course_name='is-372 data maining'
+print(course_name[0:])
+----
+
+
++*Out[18]:*+
+----
+is-372 data maining
+----
+
+
++*In[19]:*+
+[source, ipython3]
+----
+course_name='is-372 data maining'
+print(course_name[0:-1])
+----
+
+
++*Out[19]:*+
+----
+is-372 data mainin
+----
+
+
++*In[20]:*+
+[source, ipython3]
+----
+my_list = ["Hello", 93.8, "world", 10]
+my_list.append(4)
+----
+
+
++*In[24]:*+
+[source, ipython3]
+----
+my_list = ["Hello", 93.8, "world", 10]
+my_list[3]
+----
+
+
++*Out[24]:*+
+----10----
+
+
++*In[28]:*+
+[source, ipython3]
+----
+my_list = ["Hello", 93.8, "world", 10]
+my_list.append(1)
+----
+
+== 1.6 set
+
+
++*In[29]:*+
+[source, ipython3]
+----
+my_set = {}
+----
+
+== 1.7 Dictionaries
+
+
++*In[30]:*+
+[source, ipython3]
+----
+dic= {"key1" : 10 , "key2" : 5}
+dic ["key1"]
+----
+
+
++*Out[30]:*+
+----10----
+
+
++*In[31]:*+
+[source, ipython3]
+----
+dic= {"key1" : 10 , "key2" : 5}
+dic ["key1"]
+dic
+----
+
+
++*Out[31]:*+
+----{'key1': 10, 'key2': 5}----
+
+== 2.1. Control Flow Tools
+
+
++*In[ ]:*+
+[source, ipython3]
+----
+if (condition):
+ Statement 
+----
